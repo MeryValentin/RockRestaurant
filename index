@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Echo Grill - Montpellier</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0b0b0b;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#111;
+display:flex;
+justify-content:center;
+padding:15px;
+z-index:1000;
+border-bottom:1px solid #222;
+}
+
+nav a{
+color:white;
+margin:0 18px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ff3b3b;
+}
+
+/* HEADER */
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+url('https://images.unsplash.com/photo-1511379938547-c1f69419868d');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+header h1{
+font-size:70px;
+margin:0;
+letter-spacing:5px;
+}
+
+header p{
+color:#ff3b3b;
+font-size:18px;
+}
+
+/* SECTIONS */
+section{
+padding:100px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+h2{
+color:#ff3b3b;
+border-left:4px solid #ff3b3b;
+padding-left:10px;
+}
+
+/* CARDS */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#161616;
+padding:20px;
+border-radius:10px;
+border:1px solid #222;
+}
+
+/* EVENTS */
+.event{
+background:#111;
+padding:20px;
+margin-bottom:15px;
+border-left:4px solid #ff3b3b;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:40px;
+background:#000;
+border-top:1px solid #222;
+}
+
+.small{
+color:#aaa;
+font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#concept">Concept</a>
+<a href="#carte">Carte</a>
+<a href="#concerts">Concerts</a>
+<a href="#avis">Avis</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<header id="accueil">
+<h1>BLACK ECHO GRILL</h1>
+<p>Restaurant • Bar • Live Rock • Montpellier</p>
+</header>
+
+<!-- CONCEPT -->
+<section id="concept">
+<h2>🎸 Concept</h2>
+<p>
+Le Black Echo Grill est un restaurant-bar musical situé à Montpellier.
+Nous combinons une cuisine street-food premium avec des concerts live chaque week-end.
+</p>
+
+<p>
+Ambiance industrielle, son professionnel, et programmation rock / indie / punk.
+</p>
+
+<p class="small">
+📍 Ouverture officielle : 11 avril 2027 — avec Fréquence Rock
+</p>
+</section>
+
+<!-- CARTE -->
+<section id="carte">
+<h2>🍔 Carte</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Burger Black Echo</h3>
+<p>Steak, cheddar affiné, sauce fumée maison</p>
+<strong>14,50 €</strong>
+</div>
+
+<div class="card">
+<h3>Ribs BBQ</h3>
+<p>Côtes marinées 12h, sauce barbecue épicée</p>
+<strong>19,90 €</strong>
+</div>
+
+<div class="card">
+<h3>Chicken Wings</h3>
+<p>Ailes croustillantes sauce piment doux</p>
+<strong>12,90 €</strong>
+</div>
+
+<div class="card">
+<h3>Veggie Bowl</h3>
+<p>Quinoa, avocat, légumes rôtis</p>
+<strong>13,50 €</strong>
+</div>
+
+</div>
+</section>
+
+<!-- CONCERTS -->
+<section id="concerts">
+<h2>🎤 Concerts & Soirées</h2>
+
+<div class="event">
+<strong>11 avril 2027</strong> — Soirée d’ouverture avec Fréquence Rock
+</div>
+
+<div class="event">
+Tous les vendredis & samedis — groupes rock live
+</div>
+
+<div class="event">
+After DJ set — rock / electro jusqu’à 2h
+</div>
+
+</section>
+
+<!-- AVIS -->
+<section id="avis">
+<h2>⭐ Avis clients</h2>
+
+<div class="grid">
+
+<div class="card">
+“Ambiance incroyable, on se croirait dans un vrai festival.”
+<br><strong>- Lucas M.</strong>
+</div>
+
+<div class="card">
+“Meilleur resto rock de Montpellier.”
+<br><strong>- Sarah D.</strong>
+</div>
+
+<div class="card">
+“Food + concerts = expérience unique.”
+<br><strong>- Kevin R.</strong>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>📍 Contact</h2>
+
+<p>
+<strong>Adresse :</strong> 8 Rue de la Loge, 34000 Montpellier<br>
+<strong>Email :</strong> contact@blackechogrill.fr<br>
+<strong>Tél :</strong> +33 4 67 32 56 43
+</p>
+
+</section>
+
+<footer>
+<p>© 2027 Black Echo Grill — Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
